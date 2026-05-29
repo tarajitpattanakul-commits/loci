@@ -489,7 +489,21 @@ async function loadArticles() {
   nextId = articles.length ? Math.max(...articles.map(a => a.id)) + 1 : 1
   renderMain()
 }
-  
+
+window.goHome = goHome
+window.navigate = navigate
+window.goBack = goBack
+window.openArticle = openArticle
+window.doLogin = doLogin
+window.publishArticle = publishArticle
+window.switchTab = switchTab
+window.deletePost = deletePost
+window.closeDeleteModal = closeDeleteModal
+window.confirmDelete = confirmDelete
+window.openEditModal = openEditModal
+window.closeEditModal = closeEditModal
+window.saveEdit = saveEdit
+window.closePopup = closePopup  
 loadArticles()
 </script>
 </body>
